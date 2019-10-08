@@ -84,6 +84,22 @@ p{
     margin: 0 auto;
 }
 
+.modal button{
+    background-color: lightgray;
+    color: black;
+    padding: 10px 10px;
+}
+
+.modal button:hover{
+    cursor: pointer;
+    background-color: yellow;
+}
+
+.modal button:active{
+    background-color: yellow;
+    color: black;
+}
+
 .dropdown{
     float: left;
     overflow: hidden;
@@ -133,4 +149,31 @@ p{
 .dropbtn:focus {
     color: black;
     background-color: yellow;
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 5px solid lightgray;
+    margin: 5px;
+}
+
+.grid_item{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.grid_item p{
+    padding-bottom: 20px;
+}
+
+.grid_item img{
+    padding: 5px;
+    align-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+.grid_item a {
+    bottom: 0;
+    padding-left: 5px;
 }
