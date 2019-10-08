@@ -36,9 +36,14 @@
             </div>
         </div>
 
-        <div class="dropdown"> <button class="dropbtn" onclick="location.href='notImplemented.html'">  Bedriftsavtale</button></div>
-        <div class="dropdown"> <button class="dropbtn" onclick="location.href='notImplemented.html'">Spesialtilbud</button> </div>
-        <div class="dropdown"> <button class="dropbtn">Produkter</button>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='notImplemented.html'"> Bedriftsavtale</button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='notImplemented.html'">Spesialtilbud</button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Produkter</button>
             <div class="dropdown-content">
                 <a href="notImplemented.html">Månedsleie</a>
                 <a href="notImplemented.html">Barnesete</a>
@@ -53,17 +58,17 @@
     </div>
     <div class="modal">
         <div class="topnav">
-            <a class="active">Bestill en bil</a>
-            <a>Vis/endre/avbestill</a>
+            <a href="#bestill_en_bil" class="active">Bestill en bil</a>
+            <a href="#vis_endre_avbestill">Vis/endre/avbestill</a>
         </div>
-        <div class="content-modal">
+        <div class="content-modal" id="bestill_en_bil">
             <div class="top-part-modal">
                 <p>Sted eller flyplass (by, land eller flyplasskode)</p>
                 <p><input type="text" size="50"></p>
                 <p class="link"><a>Finn lokasjon</a></p>
-                <p class="link"><input type="checkbox" /> finn en annen lokasjon</p>
+                <p class="link"><input type="checkbox"/> finn en annen lokasjon</p>
                 <p>Hentes:</p>
-                <p><input type="text" size="25"/> <select >
+                <p><input type="text" size="25"/> <select>
                     <option>10.00</option>
                     <option>10.30</option>
                 </select></p>
@@ -75,20 +80,36 @@
                     </select>
                 </p>
             </div>
+            <p>Biltype:</p>
+            <p>
+                <select>
+                    <option>Stor</option>
+                    <option>liten</option>
+                    <option>Medium</option>
+                </select>
+            </p>
         </div>
-        <p>Biltype:</p>
-        <p>
-            <select>
-                <option>Stor</option>
-                <option>liten</option>
-                <option>Medium</option>
-            </select>
-        </p>
 
 
+        <div class="content-modal" id="vis_endre_avbestill">
+            <div class="top-part-modal">
+                <p>Reservasjonsnummer</p>
+                <p><input type="text" size="50"></p>
+                <p style="margin-left: auto; margin-right: auto;">and</p>
+                <p>Etternavn</p>
+                <p><input type="text" size="50"></p>
+            </div>
+            <p>Biltype:</p>
+            <p>
+                <select>
+                    <option>Stor</option>
+                    <option>liten</option>
+                    <option>Medium</option>
+                </select>
+            </p>
+        </div>
 
-
-</div>
+    </div>
 
 </body>
 </html>
