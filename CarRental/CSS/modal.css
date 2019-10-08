@@ -1,0 +1,11 @@
+#vis_endre_avbestill:not(:target) {
+    display: none;
+    background-color: aqua;
+}
+
+body  #bestill_en_bil #vis_endre_avbestill:not(:target){
+    display: block;
+    background-color: aqua;
+}
+
+
