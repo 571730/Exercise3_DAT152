@@ -1,11 +1,17 @@
-#vis_endre_avbestill:not(:target) {
+#vis_endre_avbestill:not(:target) #visendre{
     display: none;
-    background-color: aqua;
 }
 
-body  #bestill_en_bil #vis_endre_avbestill:not(:target){
+#vis_endre_avbestill:not(:target) #bestill_en_bil{
     display: block;
-    background-color: aqua;
+}
+
+#vis_endre_avbestill:target #visendre{
+    display: block;
+}
+
+#vis_endre_avbestill:target #bestill_en_bil{
+    display: none;
 }
 
 
