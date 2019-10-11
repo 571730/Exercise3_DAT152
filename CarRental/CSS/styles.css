@@ -177,3 +177,7 @@ p{
     bottom: 0;
     padding-left: 5px;
 }
+
+a {
+    text-decoration:none;
+}
