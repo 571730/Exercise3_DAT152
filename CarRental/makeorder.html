@@ -13,27 +13,40 @@
 <div class="outer-container">
     <a href="index.html" style="text-decoration:none;"><header>Heinz</header>  </a>
     <div>
-        <nav role="navigation">
+        <nav role="navigation" aria-label="Main">
             <ul>
                 <li class="notBurger">
-                    <a href="notImplemented.html" class="noClick">Lei en bil</a>
-                    <ul class="dropdown">
-                        <li><a href="notImplemented.html">Søk i pris</a></li>
-                        <li><a href="bilutleie.html">Bilguide</a></li>
+                    <a href="notImplemented.html"
+                       class="noClick"
+                       aria-haspopup="true"
+                       aria-expanded="false"
+                       aria-label="Not clickable"
+                       tabindex="0">Lei en bil</a>
+                    <ul role="menu" class="dropdown">
+                        <li><a href="notImplemented.html" role="menuitem" tabindex="0">Søk i pris</a></li>
+                        <li><a href="bilutleie.html" role="menuitem" tabindex="0">Bilguide</a></li>
                     </ul>
                 </li>
                 <li class="notBurger">
-                    <a href="#" class="noClick">Varebil</a>
+                    <a href="#" class="noClick"
+                       aria-haspopup="true"
+                       aria-expanded="false"
+                       aria-label="Not clickable"
+                       tabindex="0">Varebil</a>
                     <ul class="dropdown">
-                        <li><a href="notImplemented.html">Søk i pris</a></li>
-                        <li><a href="varebilguide.html">Bilguide</a></li>
+                        <li><a href="notImplemented.html" role="menuitem" tabindex="0">Søk i pris</a></li>
+                        <li><a href="varebilguide.html" role="menuitem" tabindex="0">Bilguide</a></li>
                     </ul>
                 </li>
                 <li class="notBurger">
-                    <a href="#" class="noClick">Steder</a>
+                    <a href="#" class="noClick"
+                       aria-haspopup="true"
+                       aria-expanded="false"
+                       aria-label="Not clickable"
+                       tabindex="0">Steder</a>
                     <ul class="dropdown">
-                        <li><a href="notImplemented.html">Søk alle utleiestasjoner</a></li>
-                        <li><a href="notImplemented.html">Norske utleiestasjoner</a></li>
+                        <li><a href="notImplemented.html" role="menuitem" tabindex="0">Søk alle utleiestasjoner</a></li>
+                        <li><a href="notImplemented.html" role="menuitem" tabindex="0">Norske utleiestasjoner</a></li>
                     </ul>
                 </li>
                 <li class="notBurger">
@@ -43,52 +56,59 @@
                     <a href="notImplemented.html">Spesialtilbud</a>
                 </li>
                 <li class="notBurger">
-                    <a href="#" class="noClick">Produkter</a>
+                    <a href="#" class="noClick"
+                       aria-haspopup="true"
+                       aria-expanded="false"
+                       aria-label="Not clickable"
+                       tabindex="0">Produkter</a>
                     <ul class="dropdown">
-                        <li><a href="notImplemented.html">Månedsleie</a></li>
-                        <li><a href="notImplemented.html">Barnesete</a></li>
-                        <li><a href="notImplemented.html">Bildeling</a></li>
-                        <li><a href="notImplemented.html">Neverlost GPS</a></li>
-                        <li><a href="notImplemented.html">Plussforsikring</a></li>
-                        <li><a href="notImplemented.html">Tilleggssjåfør</a></li>
-                        <li><a href="notImplemented.html">Vinterutstyr</a></li>
+                        <li><a href="notImplemented.html" role="menuitem" tabindex="0">Månedsleie</a></li>
+                        <li><a href="notImplemented.html" role="menuitem" tabindex="0">Barnesete</a></li>
+                        <li><a href="notImplemented.html" role="menuitem" tabindex="0">Bildeling</a></li>
+                        <li><a href="notImplemented.html" role="menuitem" tabindex="0">Neverlost GPS</a></li>
+                        <li><a href="notImplemented.html" role="menuitem" tabindex="0">Plussforsikring</a></li>
+                        <li><a href="notImplemented.html" role="menuitem" tabindex="0">Tilleggssjåfør</a></li>
+                        <li><a href="notImplemented.html" role="menuitem" tabindex="0">Vinterutstyr</a></li>
                     </ul>
                 </li>
                 <!-- THIS IS THE MENU FOR MOBILE -->
-                <li class="burger">
-                    <a href="#">
+                <li class="burger" aria-label="Mobile">
+                    <a href="#" aria-expanded="false" aria-haspopup="true" tabindex="0">
                         <span class="fa fa-bars"></span>
                     </a>
                     <ul class="dropdown">
-                        <li><a href="notImplemented.html">RESERVASJON</a></li>
-                        <li><a href="notImplemented.html">ENDRE/KANSELLERE</a></li>
-                        <li><a href="notImplemented.html">LOKASJONER</a></li>
-                        <li><a href="notImplemented.html">SPESIALTILBUD</a></li>
-                        <li><a href="notImplemented.html">JOIN/GOLD OVERVIEW</a></li>
+                        <li><a href="notImplemented.html" role="menuitem" tabindex="0">RESERVASJON</a></li>
+                        <li><a href="notImplemented.html" role="menuitem" tabindex="0">ENDRE/KANSELLERE</a></li>
+                        <li><a href="notImplemented.html" role="menuitem" tabindex="0">LOKASJONER</a></li>
+                        <li><a href="notImplemented.html" role="menuitem" tabindex="0">SPESIALTILBUD</a></li>
+                        <li><a href="notImplemented.html" role="menuitem" tabindex="0">JOIN/GOLD OVERVIEW</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </div>
-    <div class="modal" style="width: 37rem">
-        <p>Velg destinasjonsland
-            <select>
+    <div class="modal padding-modal" aria-label="Lei bil">
+        <label for="velgDest">Velg destinasjonsland</label>
+            <select id="velgDest" class="small-input">
                 <option>Norge</option>
                 <option>ikke norge</option>
-                <option>jhbnvgrshlbljsfhgbljhsrbhtsljrthb</option>
+                <option>Sverige</option>
             </select>
-        </p>
         <div class="grid_container">
             <div class="grid_item">
-                <p>Registreringsnummer: <span id="reg-nummer"></span></p>
-                <br>
-                <p> Fornavn:    <input type="text" size="25"/> </p>
-                <p> Etternavn:  <input type="text" size="25"/> </p>
-                <p> Jeg ønsker å leie fra <input type="date" size="25"/> </p>
-                <p> Jeg ønsker å leie til <input type="text" size="25"/> </p>
+                <div class="grid_item_content" aria-label="Din info">
+                    <p>Registreringsnummer: <span id="reg-nummer"></span></p>
+                    <br>
+                    <p> Fornavn:    <input type="text" class="small-input"/> </p>
+                    <p> Etternavn:  <input type="text" class="small-input"/> </p>
+                    <p> Jeg ønsker å leie fra <input type="date" class="small-input"/> </p>
+                    <p> Jeg ønsker å leie til <input type="date" class="small-input"/> </p>
+                    <a href="#" aria-describedby="finish"><button id="finish">Fullfør</button></a>
+                </div>
             </div>
         </div>
     </div>
+    <a href="index.html" aria-describedby="tilForsiden" class="padding-modal"><button id="tilForsiden">Til Forsiden</button></a>
 </div>
 
 </body>
