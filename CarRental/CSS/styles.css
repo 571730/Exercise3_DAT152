@@ -74,7 +74,7 @@ p{
     justify-content: center;
     text-align: left;
     border-radius: 0.2rem;
-    width: 25rem;
+    width: 50%;
     margin: 10px;
 }
 .modal *{
@@ -159,6 +159,15 @@ p{
     grid-template-columns: auto auto;
     border: 5px solid lightgray;
     margin: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid_container{
+        grid-template-columns: auto;
+    }
+    .modal{
+        width: 90%;
+    }
 }
 
 .grid_item{

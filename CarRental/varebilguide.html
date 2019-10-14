@@ -2,58 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Varebilguide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="CSS/nav.css">
+    <link rel="stylesheet" type="text/css" href="CSS/modal.css">
 </head>
 <body>
 <div class="outer-container">
     <a href="index.html" style="text-decoration:none;"><header>Heinz</header>  </a>
-    <div class="topnav">
-        <div class="dropdown">
-            <button class="dropbtn">Lei en bil
-
-            </button>
-            <div class="dropdown-content">
-                <a href="notImplemented.html">Søk i pris</a>
-                <a href="bilutleie.html">Bilguide</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Varebil
-
-            </button>
-            <div class="dropdown-content">
-                <a href="notImplemented.html">Søk i pris</a>
-                <a href="varebilguide.html">Bilguide</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Steder
-
-            </button>
-            <div class="dropdown-content">
-                <a href="notImplemented.html"> Søk alle utleiestasjoner</a>
-                <a href="notImplemented.html">Norske utleiestasjoner</a>
-            </div>
-        </div>
-
-        <div class="dropdown"> <button class="dropbtn" onclick="location.href='notImplemented.html'"> Bedriftsavtale</button></div>
-        <div class="dropdown"><button class="dropbtn" onclick="location.href='notImplemented.html'">Spesialtilbud</button></div>
-        <div class="dropdown">
-            <button class="dropbtn">Produkter</button>
-            <div class="dropdown-content">
-                <a href="notImplemented.html">Månedsleie</a>
-                <a href="notImplemented.html">Barnesete</a>
-                <a href="notImplemented.html">Bildeling</a>
-                <a href="notImplemented.html">Neverlost GPS</a>
-                <a href="notImplemented.html">Plussforsikring</a>
-                <a href="notImplemented.html">Superforsikring</a>
-                <a href="notImplemented.html">Tilleggssjåfør</a>
-                <a href="notImplemented.html">Vinterutstyr</a>
-            </div>
-        </div>
+    <div>
+        <nav role="navigation">
+            <ul>
+                <li class="notBurger">
+                    <a href="notImplemented.html" class="noClick">Lei en bil</a>
+                    <ul class="dropdown">
+                        <li><a href="notImplemented.html">Søk i pris</a></li>
+                        <li><a href="bilutleie.html">Bilguide</a></li>
+                    </ul>
+                </li>
+                <li class="notBurger">
+                    <a href="#" class="noClick">Varebil</a>
+                    <ul class="dropdown">
+                        <li><a href="notImplemented.html">Søk i pris</a></li>
+                        <li><a href="varebilguide.html">Bilguide</a></li>
+                    </ul>
+                </li>
+                <li class="notBurger">
+                    <a href="#" class="noClick">Steder</a>
+                    <ul class="dropdown">
+                        <li><a href="notImplemented.html">Søk alle utleiestasjoner</a></li>
+                        <li><a href="notImplemented.html">Norske utleiestasjoner</a></li>
+                    </ul>
+                </li>
+                <li class="notBurger">
+                    <a href="notImplemented.html">Bedriftsavtale</a>
+                </li>
+                <li class="notBurger">
+                    <a href="notImplemented.html">Spesialtilbud</a>
+                </li>
+                <li class="notBurger">
+                    <a href="#" class="noClick">Produkter</a>
+                    <ul class="dropdown">
+                        <li><a href="notImplemented.html">Månedsleie</a></li>
+                        <li><a href="notImplemented.html">Barnesete</a></li>
+                        <li><a href="notImplemented.html">Bildeling</a></li>
+                        <li><a href="notImplemented.html">Neverlost GPS</a></li>
+                        <li><a href="notImplemented.html">Plussforsikring</a></li>
+                        <li><a href="notImplemented.html">Tilleggssjåfør</a></li>
+                        <li><a href="notImplemented.html">Vinterutstyr</a></li>
+                    </ul>
+                </li>
+                <!-- THIS IS THE MENU FOR MOBILE -->
+                <li class="burger">
+                    <a href="#">
+                        <span class="fa fa-bars"></span>
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="notImplemented.html">RESERVASJON</a></li>
+                        <li><a href="notImplemented.html">ENDRE/KANSELLERE</a></li>
+                        <li><a href="notImplemented.html">LOKASJONER</a></li>
+                        <li><a href="notImplemented.html">SPESIALTILBUD</a></li>
+                        <li><a href="notImplemented.html">JOIN/GOLD OVERVIEW</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <div class="modal" style="width: 37rem">
+    <div class="modal">
         <p>Velg destinasjonsland
             <select>
                 <option>Norge</option>
