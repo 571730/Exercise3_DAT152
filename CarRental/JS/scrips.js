@@ -1,6 +1,9 @@
 function addRemoveActive(e) {
+    let activeEl = document.querySelector('.active');
+    activeEl.setAttribute('aria-selected', 'false');
     document.querySelector('.active').classList.remove('active');
     e.target.classList.add('active');
+    e.target.setAttribute('aria-selected', 'true');
 }
 
 function setRegNumber() {
