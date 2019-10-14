@@ -49,6 +49,7 @@ p{
     padding: 14px 16px;
 }
 
+.topnav a:focus-within,
 .topnav a:hover{
     background-color: yellow;
     color: #333;

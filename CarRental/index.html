@@ -3,44 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Lei en bil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
     <link rel="stylesheet" type="text/css" href="CSS/nav.css">
     <link rel="stylesheet" type="text/css" href="CSS/modal.css">
 </head>
 <body>
 <div class="outer-container">
+    <script src="JS/scrips.js" defer></script>
     <header>Heinz</header>
     <div>
         <nav role="navigation">
             <ul>
-                <li>
+                <li class="notBurger">
                     <a href="notImplemented.html" class="noClick">Lei en bil</a>
                     <ul class="dropdown">
                         <li><a href="notImplemented.html">Søk i pris</a></li>
                         <li><a href="bilutleie.html">Bilguide</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="notBurger">
                     <a href="#" class="noClick">Varebil</a>
                     <ul class="dropdown">
                         <li><a href="notImplemented.html">Søk i pris</a></li>
                         <li><a href="bilutleie.html">Bilguide</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="notBurger">
                     <a href="#" class="noClick">Steder</a>
                     <ul class="dropdown">
                         <li><a href="notImplemented.html">Søk alle utleiestasjoner</a></li>
                         <li><a href="notImplemented.html">Norske utleiestasjoner</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="notBurger">
                     <a href="notImplemented.html">Bedriftsavtale</a>
                 </li>
-                <li>
+                <li class="notBurger">
                     <a href="notImplemented.html">Spesialtilbud</a>
                 </li>
-                <li>
+                <li class="notBurger">
                     <a href="#" class="noClick">Produkter</a>
                     <ul class="dropdown">
                         <li><a href="notImplemented.html">Månedsleie</a></li>
@@ -52,14 +54,27 @@
                         <li><a href="notImplemented.html">Vinterutstyr</a></li>
                     </ul>
                 </li>
+                <!-- THIS IS THE MENU FOR MOBILE -->
+                <li class="burger">
+                    <a href="#">
+                        <span class="fa fa-bars"></span>
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="notImplemented.html">RESERVASJON</a></li>
+                        <li><a href="notImplemented.html">ENDRE/KANSELLERE</a></li>
+                        <li><a href="notImplemented.html">LOKASJONER</a></li>
+                        <li><a href="notImplemented.html">SPESIALTILBUD</a></li>
+                        <li><a href="notImplemented.html">JOIN/GOLD OVERVIEW</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </div>
     <section>
     <div class="modal">
         <div class="topnav">
-            <a href="#" class="active padding">Bestill en bil</a>
-            <a href="#vis_endre_avbestill" class="padding">Vis/endre/avbestill</a>
+            <a id="meny-bestill" href="#" class="active padding" onclick="addRemoveActive(event)">Bestill en bil</a>
+            <a id="meny-vis" href="#vis_endre_avbestill" class="padding" onclick="addRemoveActive(event)">Vis/endre/avbestill</a>
         </div>
         <div id="vis_endre_avbestill">
             <div class="content-modal" id="bestill_en_bil">
