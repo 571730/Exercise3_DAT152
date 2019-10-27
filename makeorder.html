@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Betilling</title>
+    <title>Bestilling</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
     <link rel="stylesheet" type="text/css" href="CSS/nav.css">
@@ -11,7 +11,7 @@
 <body onload="setRegNumber()">
 <script src="JS/scrips.js" defer></script>
 <div class="outer-container">
-    <a href="index.html" style="text-decoration:none;"><header>Heinz</header>  </a>
+    <a href="index.html" style="text-decoration:none;" aria-label="Til forsiden"><header>Heinz</header></a>
     <div>
         <nav role="navigation" aria-label="Main">
             <ul>
@@ -99,10 +99,22 @@
                 <div class="grid_item_content" aria-label="Din info">
                     <p>Registreringsnummer: <span id="reg-nummer"></span></p>
                     <br>
-                    <p> Fornavn:    <input type="text" class="small-input"/> </p>
-                    <p> Etternavn:  <input type="text" class="small-input"/> </p>
-                    <p> Jeg ønsker å leie fra <input type="date" class="small-input"/> </p>
-                    <p> Jeg ønsker å leie til <input type="date" class="small-input"/> </p>
+                    <label>Fornavn:</label>
+                    <input type="text" class="small-input"/>
+                    <br>
+                    <br>
+                    <label>Etternavn:</label>
+                    <input type="text" class="small-input"/>
+                    <br>
+                    <br>
+                    <label>Jeg ønsker å leie fra</label>
+                    <input type="date" class="small-input"/>
+                    <br>
+                    <br>
+                    <label>Jeg ønsker å leie til</label>
+                    <input type="date" class="small-input"/>
+                    <br>
+                    <br>
                     <a href="#" aria-describedby="finish"><button id="finish">Fullfør</button></a>
                 </div>
             </div>

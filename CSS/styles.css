@@ -78,6 +78,7 @@ header{
     border-radius: 0.2rem;
     width: 50%;
     margin: 10px;
+    min-width: 430px;
 }
 .padding-modal{
     padding: 1%;
@@ -204,12 +205,13 @@ header{
     color: #333333;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .grid_container{
         grid-template-columns: auto;
     }
     .modal{
         width: 90%;
+        min-width: 0;
     }
     select{
         width: 60%;
