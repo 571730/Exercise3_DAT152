@@ -16,6 +16,11 @@ header{
     font-size: 25px;
 }
 
+.block-margin{
+    display: block;
+    margin: 4% 0;
+}
+
 .link a {
     text-decoration-color: blue;
     text-decoration: underline;
